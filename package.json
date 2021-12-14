@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --config config/webpack.dev.js",
+    "prod": "webpack --config config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,28 @@
   "bugs": {
     "url": "https://github.com/timchao0825/webpack-mpa-build-tool/issues"
   },
-  "homepage": "https://github.com/timchao0825/webpack-mpa-build-tool#readme"
+  "homepage": "https://github.com/timchao0825/webpack-mpa-build-tool#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.1.0",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "fs-readdir-recursive": "^1.1.0",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.0.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.0",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
 }
