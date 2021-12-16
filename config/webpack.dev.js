@@ -6,7 +6,7 @@ const WebpackConfigDev = {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: './js/[name].bundle.js'
+    filename: 'js/[name].bundle.js'
   },
   devtool: 'eval-source-map',
   devServer: {
