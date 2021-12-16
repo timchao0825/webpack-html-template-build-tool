@@ -41,7 +41,7 @@ const WebpackConfigProd = {
       },
       {
         // handle image
-        test: /\.(png|svg|jpg|gif|pdf|webp)$/,
+        test: /\.(png|svg|jpg|gif|pdf|webp|svg)$/,
         exclude: /node_modules/,
         use: [
           {
@@ -78,7 +78,7 @@ const WebpackConfigProd = {
       },
       {
         // handle font
-        test: /\.(woff(2)?|ttf|eot|svg|otf)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader'
