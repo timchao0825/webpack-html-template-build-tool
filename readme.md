@@ -37,7 +37,7 @@
 ## 🛑Notice
 
 ```
-HTML img tag need using
+HTML img tag src need using
 <%= require('../images/xxx.png') %>
 ```
 
