@@ -30,7 +30,17 @@ const WebpackConfigDev = {
       {
         // handle scss
         test: /\.(sa|sc|c)ss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          'postcss-loader',
+          'sass-loader'
+        ]
       },
       {
         // handle image
