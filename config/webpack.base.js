@@ -48,12 +48,12 @@ const entryObj = entries()
 const htmlArray = []
 Object.keys(entryObj).forEach(el => {
   htmlArray.push({
-    _html: el,
+    html: el,
     chunks: ['vendor', 'common', el]
   })
 })
 htmlArray.forEach(el => {
   module.exports.plugins.push(
-    new HtmlWebpackPlugin(htmlConfig(el._html, el.chunks))
+    new HtmlWebpackPlugin(htmlConfig(el.html, el.chunks))
   )
 })
