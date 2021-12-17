@@ -41,7 +41,7 @@ const WebpackConfigProd = {
       },
       {
         // handle image
-        test: /\.(png|svg|jpg|gif|pdf|webp|svg)$/,
+        test: /\.(png|svg|jpg|gif|pdf|webp)$/,
         exclude: /node_modules/,
         use: [
           {
