@@ -13,10 +13,11 @@ const WebpackConfigDev = {
     watchFiles: ['src/**/*'],
     compress: false,
     port: 8080,
-    hot: true,
+    allowedHosts: 'all',
     open: true,
     client: {
-      overlay: true
+      overlay: true,
+      reconnect: true
     }
   },
   module: {
@@ -43,19 +44,11 @@ const WebpackConfigDev = {
         ]
       },
       {
-        // handle image
         test: /\.(png|svg|jpg|gif|pdf|webp)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: './images',
-              esModule: false
-            }
-          }
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        }
       },
       {
         // handle font

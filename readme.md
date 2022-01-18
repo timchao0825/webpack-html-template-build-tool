@@ -34,13 +34,6 @@
 └── README.md
 ```
 
-## 🛑Notice
-
-```
-HTML img tag src need using
-<%= require('../images/xxx.png') %>
-```
-
 ## 🍛Requirements
 
 To run this project, you’ll need to install [Node.js](https://nodejs.org/en/). The latest version of Node.js is recommended.

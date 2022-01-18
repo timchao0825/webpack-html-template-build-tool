@@ -41,17 +41,13 @@ const WebpackConfigProd = {
       },
       {
         // handle image
-        test: /\.(png|svg|jpg|gif|pdf|webp)$/,
+        test: /\.(png|svg|jpg|gif|pdf|webp|svg)$/,
         exclude: /node_modules/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        },
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: './images',
-              esModule: false
-            }
-          },
           {
             loader: 'image-webpack-loader',
             options: {
