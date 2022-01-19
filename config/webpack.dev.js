@@ -55,8 +55,7 @@ const WebpackConfigDev = {
         ]
       },
       {
-        // test: /\.(png|svg|jpg|gif|pdf|webp)$/,
-        test: /\.(png|svg|jpg|gif|pdf|webp)$/i,
+        test: /\.(png|svg|jpg|gif|pdf|webp)$/,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]'
