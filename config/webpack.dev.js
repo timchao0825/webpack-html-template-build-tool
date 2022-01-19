@@ -36,11 +36,22 @@ const WebpackConfigDev = {
           {
             loader: 'css-loader',
             options: {
-              url: false
+              url: true
+            }
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {
+              debug: true
             }
           },
           'postcss-loader',
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       },
       {
