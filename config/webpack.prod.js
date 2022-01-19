@@ -36,10 +36,7 @@ const WebpackConfigProd = {
             }
           },
           {
-            loader: 'resolve-url-loader',
-            options: {
-              debug: true
-            }
+            loader: 'resolve-url-loader'
           },
           'postcss-loader',
           {
