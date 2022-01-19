@@ -34,6 +34,16 @@
 └── README.md
 ```
 
+## 🛑Notice
+
+```
+HTML img tag src need using
+<%= require('../images/xxx.png') %>
+
+Template folder file using html loader, no need use require
+src="../images/xxx"
+```
+
 ## 🍛Requirements
 
 To run this project, you’ll need to install [Node.js](https://nodejs.org/en/). The latest version of Node.js is recommended.

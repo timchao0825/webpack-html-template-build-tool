@@ -11,10 +11,10 @@ const WebpackConfigDev = {
   devtool: 'eval-source-map',
   devServer: {
     watchFiles: ['src/**/*'],
-    compress: false,
+    compress: true,
     port: 8080,
     allowedHosts: 'all',
-    open: true,
+    // open: true,
     client: {
       overlay: true,
       reconnect: true
@@ -44,7 +44,8 @@ const WebpackConfigDev = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif|pdf|webp)$/,
+        // test: /\.(png|svg|jpg|gif|pdf|webp)$/,
+        test: /\.(png|svg|jpg|gif|pdf|webp)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]'
