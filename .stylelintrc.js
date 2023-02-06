@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-prettier',
-    'stylelint-config-sass-guidelines'
+    'stylelint-config-prettier'
+    // 'stylelint-config-sass-guidelines'
   ],
   plugins: ['stylelint-scss', 'stylelint-order', 'stylelint-prettier'],
   rules: {
